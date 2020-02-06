@@ -12,15 +12,12 @@
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     UIWindowScene *windowScene = (UIWindowScene *)scene;
-        self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-        self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+    self.window.backgroundColor = [UIColor whiteColor];
     NSURL *url = [NSURL URLWithString:@"https://webim-h5.easemob.com/"];
     SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:url];
     safariVC.delegate = self;
-        [self.window setRootViewController:safariVC];
-        [self.window makeKeyAndVisible];
-
-
+    [self.window setRootViewController:safariVC];
     [self.window makeKeyAndVisible];
 }
 
