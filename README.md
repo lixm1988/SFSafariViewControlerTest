@@ -1,2 +1,2 @@
 # SFSafariViewControlerTest
-测试SFSafariViewControler对webrtc的支持
+SFSafariViewControler对webrtc的支持需要iOS 13以上的操作系统
